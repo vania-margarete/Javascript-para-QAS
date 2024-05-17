@@ -1,0 +1,162 @@
+console.log ('Olá, Javascript!')
+
+var userName = 'Fernando papito'
+document.getElementById('user-Name').innerHTML = userName
+
+
+//var nome = 'Mestre Yoda'
+//var idade = 100
+//var jedi = true
+
+//console.log(name)
+//console.log(idade)
+//console.log(jedi)
+
+//Operadores matemáticos //
+
+//console.log(typeof n1)
+//console.log(typeof n2)
+
+
+//var n1 = 5 
+//var n2 = '5'
+//var total = n1 + n2
+//console.log(total)
+
+// + para somar
+// - para subtrair
+// * para multiplicar
+// / para dividir
+
+//var total = n1 / n2
+//console.log (total)
+
+//var v1 = 5
+//var v2 =5
+
+//var resultado = v1 ===v2
+//console.log (resultado)
+
+//Funções//
+
+//function soma (n1, n2) {
+  //  console.log(n1 + n2)
+
+//}
+//soma(n1: any, n2: any): void
+
+//soma(5, 100)
+
+//function boasVindas() {
+    alert(nome +', sejam bem-vindos(a)') 
+//}
+
+//boasVindas('Fernando')
+
+//function soma(n1, n2) {
+    return n1 + n2
+//}
+
+//var resultado = soma(5,5)
+//console.log(resultado)
+
+// Controle de fluxos//
+
+//Sendo um cliente correntista do banco
+//Posso sacar dinheiro em caixas eletrônicos
+//Para poder comprar em lugares que não aceitam o cartão de débito ou crédito 
+
+var saldo = 1000
+
+function saque(valor) {
+
+    if(valor > saldo ){
+    console.log('valor do saque superior ao saldo')
+    } else if (valor > 700){
+        console.log ('Valor do saque é superior ao maximo permitido por operação')
+
+    } else {
+
+    }
+    
+    saldo = saldo - valor
+}
+
+saque(701)
+console.log(saldo)
+
+//Cenario 1: Saque com sucesso
+//Dado que meu saldo é de 1000 reais 
+//Quando faço um saque de 500 reais 
+//Então o valor do saque deve ser deduzio do meu saldo 
+
+//Cenario 2: Saque com valor superior ao saldo
+//Dado que meu saldo é de 1000 reais 
+//quando faço um saque de 1001 reais 
+//Então não deve deduzir do meu saldo
+//E deve mostrar uma mensagem de alerta informando que o valor é superior ao saldo
+
+//Cenario 3: Saque com valor máximo
+//Dado que meu saldo é de 1000 reais 
+// E o valor máximo por operação é de 700
+//quando faço um saque no valor de 701 reais 
+//Então não deve deduzir do meu saldo
+//E deve mostrar uma mensagem de alerta informando que o valor é superior ao máximo permitido
+
+// Arrays //
+
+// var gaveteiro = ['meias,''Gravatas', 'Documentos', 'Salgadinhos']
+
+//console.çog(gaveteiros[3])
+
+//var personagens = ['mestre Yoda', 'Luke Skeywalke', 'Princesda Leia', 'Darth vader']
+
+//personagens.push('C3pO')
+//personagens.push('R2D2')
+
+//personagens.pop()
+
+//personagens = personagens.filter(function(p)){
+   // return p !== 'Darth Vader'
+//})
+
+
+//personagens = personagens.filter(function(p)){
+   // return p == 'Mestre Yoda'
+//})
+//personagens.forEach(function(p)){
+  //  console.log(p)
+//}
+
+//console.log(personagens)
+
+//for(var i in personagens) {
+  //  console.log(personagens[i])
+//}
+
+//for (var i = 0; i <= 10; i ++) {
+  //  console.log(i)
+    //código vai ser executado até a condição retornar false
+//}
+
+//objetos//
+
+//var yoda = {
+     name:'Mestre Yoda',
+     idade: 100,
+     jedi: true,
+     mostra_idade: function() {
+        console.log ('A idade do ${this.nome} é $ {this.idade}anos.')
+     }
+//}
+
+//console.log(yoda)
+//yoda.mostraIdade()
+
+//Constantes//
+
+const nome = 'Darth Vader'
+console.log(nome)
+
+nome = 'Mestre Yoda'
+console.log(nome)
